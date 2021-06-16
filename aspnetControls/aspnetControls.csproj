@@ -95,6 +95,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckTextBox.aspx.cs">
+      <DependentUpon>CheckTextBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckTextBox.aspx.designer.cs">
+      <DependentUpon>CheckTextBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -103,12 +116,89 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site3.Master.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site3.Master.designer.cs">
+      <DependentUpon>Site3.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site4.Master.cs">
+      <DependentUpon>Site4.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site4.Master.designer.cs">
+      <DependentUpon>Site4.Master</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contentpage1.aspx.cs">
+      <DependentUpon>Contentpage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contentpage1.aspx.designer.cs">
+      <DependentUpon>Contentpage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contentpage2.aspx.cs">
+      <DependentUpon>Contentpage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contentpage2.aspx.designer.cs">
+      <DependentUpon>Contentpage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseCPage2.aspx.cs">
+      <DependentUpon>BaseCPage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseCPage2.aspx.designer.cs">
+      <DependentUpon>BaseCPage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentCtoM.aspx.cs">
+      <DependentUpon>ContentCtoM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentCtoM.aspx.designer.cs">
+      <DependentUpon>ContentCtoM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchContent.aspx.cs">
+      <DependentUpon>SearchContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchContent.aspx.designer.cs">
+      <DependentUpon>SearchContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraContentPage.aspx.cs">
+      <DependentUpon>ExtraContentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraContentPage.aspx.designer.cs">
+      <DependentUpon>ExtraContentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseCPage1.aspx.cs">
+      <DependentUpon>BaseCPage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseCPage1.aspx.designer.cs">
+      <DependentUpon>BaseCPage1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -148,10 +238,18 @@
     <Content Include="App_Data\RadCaptcha\X.wav" />
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="CheckTextBox.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Images\click-button.jpg" />
     <Content Include="Images\Click.jpg" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="Contentpage1.aspx" />
+    <Content Include="Contentpage2.aspx" />
+    <Content Include="BaseCPage2.aspx" />
+    <Content Include="ContentCtoM.aspx" />
+    <Content Include="SearchContent.aspx" />
+    <Content Include="ExtraContentPage.aspx" />
+    <Content Include="BaseCPage1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\RadSpell\de-DE.tdf" />
@@ -164,6 +262,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="web.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="Site2.Master" />
+    <Content Include="Site3.Master" />
+    <Content Include="Site4.Master" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -205,7 +307,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

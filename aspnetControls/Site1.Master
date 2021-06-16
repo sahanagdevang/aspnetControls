@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="aspnetControls.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <style>
+        DataScroll {
+            overflow: scroll;
+        }
+    </style>
+    <title></title>
+    <%--<asp:ContentPlaceHolder ID="head" runat="server">   here content page can plugin there specific content
+    </asp:ContentPlaceHolder>--%>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           <table style="font-family:Arial">
+               <tr>
+                   <td colspan="2" style="width:800px;height:80px;background-color:aliceblue;text-align:center"> 
+                             <h1>Website Header</h1>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td style="height:500px;background-color:aliceblue;width:150px;text-align:center">
+                       <h3>Menu</h3>
+                   </td>
+                   <td style="height:500px;background-color:white;width:650px;text-align:center">
+                       <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                           <h4>This part changes on page by page basis</h4>
+                       </asp:ContentPlaceHolder>
+                      
+                       
+                   </td>
+               </tr>
+
+               <tr>
+                   <td colspan="2" style="background-color:aquamarine;text-align:center">
+                       <b>Website Footer</b>
+                   </td>
+               </tr>
+           </table>
+        </div>
+    </form>
+</body>
+</html>

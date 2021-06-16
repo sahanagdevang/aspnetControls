@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="aspnetControls.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   
+    <title></title>
+    <%--<style type="text/css">
+        .auto-style1 {
+            width: 800px;
+            height: 80px;
+        }
+    </style>--%>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <div>
+           <table style="font-family:Arial">
+               <tr>
+                   <td colspan="2" style="background-color:grey;text-align:center" class="auto-style1"> 
+                       <h1>Searching Website</h1>
+                       <asp:ContentPlaceHolder ID="SearchingPanel" runat="server">
+                       <asp:Panel ID="panelsearch" runat="server">     
+                 <b>Search:</b>
+        <asp:TextBox ID="txtSearch" runat="server"></asp:TextBox>
+        <asp:Button ID="btnSearch" runat="server" Text="Button"  />
+                       </asp:Panel>
+                           </asp:ContentPlaceHolder>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td style="height:500px;background-color:darkgrey;width:150px;text-align:center">
+                       <h3>Menu </h3>  
+                       <br />
+                       <asp:TextBox ID="txtMasterPage" runat="server"></asp:TextBox>
+                   </td>
+                   <td style="height:500px;background-color:white;width:650px;text-align:center">
+                       <asp:ContentPlaceHolder ID="DataPassingPlaceHolder" runat="server">
+                           
+                       </asp:ContentPlaceHolder>     
+                   </td>
+               </tr>
+
+               <tr>
+                   <td colspan="2" style="background-color:aquamarine;text-align:center">
+                       <b>Website Footer</b>
+                   </td>
+               </tr>
+           </table>
+        </div>
+    </form>
+</body>
+</html>
